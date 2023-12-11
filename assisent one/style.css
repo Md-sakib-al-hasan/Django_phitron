@@ -1,0 +1,90 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav_col{
+    background-color:#1A187A !important;
+}
+.width_img{
+    width: 50%;
+}
+.navbar-toggler{
+    color: #1A187A !important;
+    border: none  !important;
+}
+.navbar-toggler-icon{
+    background-image: url(./resources/navigation-bar.png) !important;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.ban_img{
+    background-image: url('./resources/403636715_1982631765437422_4066485070685005124_n.png');
+}
+.ban_img_1{
+    background-image: url('./resources/pexels-codioful-\(formerly-gradienta\)-6985001.jpg');
+    background-size: cover;
+}
+.ban_img_2{
+    background-image: url('./resources/pexels-codioful-\(formerly-gradienta\)-7130560.jpg');
+    background-size: cover;
+}
+.fs_ip{
+  font-size:4.7rem;  
+}
+.padding_banner{
+    padding: 10rem !important;
+}
+.top_image_banner{
+    top:-4rem !important;
+    left: 10rem !important;
+}
+.fs_small_size{
+    font-size: 10px !important;
+}
+.col_hadephone{
+    background-color: skyblue !important;
+}
+.lap_img_size{
+    width: 40rem !important;
+}
+.bag_mare_thing{
+    background-color: rgb(218, 219, 219);
+}
+.width_heard{
+    width: 10% !important;
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+}
+.ms_iphone_14{
+    margin-left:25% ;
+}
+.btn-dark{
+    background-color: black !important;
+}
+.offer_sale{
+    margin-left: -7rem;
+    width: 80%;
+}
+@media  only screen and (max-width:576px){
+    .lap_img_size{
+        width: 23rem!important;
+    }
+    .fs_small_size_lg{
+        font-size: 12px!important;
+    }
+    .offer_sale{
+        width:50%;
+        margin-left:1.5rem ;
+        margin-top: -7rem !important;
+    }
+    .offer_sale_2{
+        width: 55%;
+    }
+    .foodr_logo_mar{
+        margin-left: 6rem;
+    }
+}

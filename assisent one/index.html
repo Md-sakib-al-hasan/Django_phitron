@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&display=swap" rel="stylesheet">
+  <title>Assignment 1</title>
+</head>
+<body>
+<header>
+<div class="header-container">
+  <nav class="navbar navbar-expand-md nav_col">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-3 d-none d-md-block"></div>
+         <img class="col-4 col-md-2" src="./resources/Group 2.png" alt="">
+         <div class="col-6 d-md-none d-block"></div>
+         <button class="navbar-toggler col d-md-none d-block na_sm_b_col" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-6 align-items-center " id="navbarSupportedContent">
+          <div class="row">
+            <form class="d-md-flex d-none col-4" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="col d-block d-md-flex gap-3 align-items-center list-unstyled">
+              <li><a class="text-decoration-none text-light" href="#">Home</a></li>
+              <li><a class="text-decoration-none text-light" href="#">About</a></li>
+              <li><a class="text-decoration-none text-light" href="#">Contact us</a></li>
+              <i class="fa-solid fa-cart-shopping" style="color: #f2f2f2;"></i>
+              <i class="fa-solid fa-user" style="color: #ededed;"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+<main>
+ <div class="main-container">
+
+   <!-- banner container -->
+   <div class="banner_container">
+    <div class="d-none d-md-block">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active ban_img">
+            <div >
+              <div class="container padding_banner">
+                <div class="slid-1 row">
+                  <div class="slid-1-l col-6">
+                    <p class="lh-1">Pro.Beyond</p>
+                    <p class="fs_ip lh-1">Iphone <span class="fw-bold lh-1">14 Pro</span></p>
+                    <p>Create to change everything for the better. For everyone</p>
+                    <button type="button" class="btn nav_col text-light px-4">Shop Now</button>
+                  </div>
+                  <div class="slid-1-r col position-relative ">
+                    <img  class="w-75 position-absolute top_image_banner " src="./resources/Iphone Image.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ban_img_2">
+            <div >
+              <div class="container padding_banner">
+                <div class="slid-1 row">
+                  <div class="slid-1-l col-6">
+                    <p class="lh-1">Pro.Beyond</p>
+                    <p class="fs_ip lh-1">Iphone <span class="fw-bold lh-1">13 Pro</span></p>
+                    <p>Create to change everything for the better. For everyone</p>
+                    <button type="button" class="btn nav_col text-light px-4">Shop Now</button>
+                  </div>
+                  <div class="slid-1-r col position-relative ">
+                    <img  class="w-75 position-absolute top_image_banner " src="./resources/Iphone Image.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ban_img_1">
+            <div >
+              <div class="container padding_banner">
+                <div class="slid-1 row">
+                  <div class="slid-1-l col-6">
+                    <p class="lh-1">Pro.Beyond</p>
+                    <p class="fs_ip lh-1">Iphone <span class="fw-bold lh-1">15 Pro</span></p>
+                    <p>Create to change everything for the better. For everyone</p>
+                    <button type="button" class="btn nav_col text-light px-4">Shop Now</button>
+                  </div>
+                  <div class="slid-1-r col position-relative ">
+                    <img  class="w-75 position-absolute top_image_banner " src="./resources/Iphone Image.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+    <div class="d-block d-md-none">
+      <div class="text-center lh-1">
+        <P>Pro.Beyond</P>
+        <h1 class="fw-semibold">Iphone <span class="fw-bold">14 Pro</span></h1>
+        <p class="fs_small_size">Created to change everyting tor the better.For everyone</p>
+      </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active  ps-5 ">
+            <img src="./resources/Iphone Image.png" class="d-block w-50" alt="...">
+          </div>
+          <div class="carousel-item ps-3">
+            <img src="./resources/Iphone 14 pro 1-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item pt-5">
+            <img src="./resources/ipad.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+   </div>
+
+ </div>
+
+
+ <!-- more item -->
+ <div class="more_container">
+  <div class="">
+    <div class="row">
+      <div class="col-md-6">
+         <div class="up row  d-flex align-items-center">
+          <div class="col-6">
+            <img class="w-100" src="./resources/ipad.png" alt="">
+          </div>
+          <div class="col-6 mt-5">
+            <h1 class="fs-6 pt-4">Ipad 9</h1>
+            <p class="fs_small_size_lg">he 9th-gen iPad upgrades the internals from the A12 Bionic to the A13 Bionic, expands the base model's storage from 32GB to 64GB, delivers an upgrade to the front-facing camera, and adds True Tone to the</p>
+          </div>
+         </div>
+         <div class="down row col_hadephone">
+           <div class="col-6 bottom-50  z-0 overflow-hidden">
+             <img style="width: 15rem;margin: -50px ;" src="./resources/hero__gnfk5g59t0qe_xlarge_2x 1.png" alt="">
+           </div>
+           <div class="col-5">
+            <h1 class="fs-6 pt-5">APPle AirPods Max</h1>
+            <p class="fs_small_size_lg pb-md-5 pb-0">AirPods Max combine high-fidelity audio with industry-leading Active Noise Cancellation to deliver an unparalleled listening experience. </p>
+           </div>
+         </div>
+      </div>
+      <div class="col-md-6 row bag_mare_thing overflow-hidden">
+        <div  class="left col-md-6 d-md-flex align-items-center">
+          <div class="text-center text-md-start">
+            <P class="fs-2 fw-lighter ">Macbook <span class="fw-bolder">Air</span></P>
+            <p class="fs_small_size_lg">13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors</p>
+            <button type="button" class="btn nav_col text-light px-5 py-2 ">Primary</button>
+          </div>
+        </div>
+        <div class="right col-md-6 d-flex justify-content-center d-md-block">
+           <img class="lap_img_size mt-5" src="./resources/Group 6.png" alt="">
+        </div>
+      </div>
+
+    </div>
+</div>
+
+ </div>
+
+ <!-- all elements -->
+ <div class="all_element">
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between mx-3">
+      <p class="">Browse By Category</p>
+      <p class=""> &lt &gt</p>
+    </div>
+   <div class="container">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-2 col-6 mb-2">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/cell-phone (2).png" alt="">
+            <p class="card-title">phones</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-6 mb-2">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/smart-watch.png" alt="">
+            <p class="card-title">Smart watches</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-6 mb-2">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/camera.png" alt="">
+            <p class="card-title">cameras</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/headphones.png" alt="">
+            <p class="card-title">Headphones</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/computer.png" alt="">
+            <p class="card-title">computers</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="card  ">
+          <div class="card-body bag_mare_thing text-center">
+            <img class="py-2" src="./resources/console.png" alt="">
+            <p class="card-title">Gaming</p>
+           
+          </div>
+        </div>
+      </div> 
+  
+    </div>
+  </div>
+
+  </div>
+ </div>
+
+ <!-- all iphone elements -->
+ <div class="all_iphone pt-5">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="text_container d-flex gap-2 justify-content-center justify-content-md-start">
+          <p class="text-decoration-underline">New Arrival</p>
+          <p class="text-secondary">Destseller</p>
+          <p class="text-secondary">Featured Products</p>
+      </div>
+      <div class="card_container row gap-3  d-flex justify-content-center">
+        <div class="card col-md position-relative text-center" style="width: 18rem;">
+          <img  class="width_heard" src="./resources/heart.png">
+          <img  src="./resources/Iphone 14 pro 1-2.png" class="card-img-top w-50 pt-5  ms_iphone_14" alt="...">
+          <div class="card-body">
+            <p class="card-text ">Apple iphone 14 Pro Max<br> 128GB Deep Purple<br> (MQ9T3RX/A)</p>
+            <h5 class="card-title mb-3 fw-bold fs-2">$900</h5>
+            <a href="#" class="btn btn-dark px-5">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card  col-md position-relative text-center" style="width: 18rem;">
+          <img  class="width_heard" src="./resources/heart.png">
+          <img  src="./resources/Iphone 14 pro 1-3.png" class="card-img-top w-50 pt-5  ms_iphone_14" alt="...">
+          <div class="card-body">
+            <p class="card-text ">Blackmagic pocket cinema<br>camera 6k</p>
+            <h5 class="card-title mb-3 fw-bold fs-2">$2535</h5>
+            <a href="#" class="btn btn-dark px-5">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-md position-relative text-center" style="width: 18rem;">
+          <img  class="width_heard" src="./resources/heart (2).png">
+          <img  src="./resources/Iphone 14 pro 1-1.png" class="card-img-top w-50 pt-5  ms_iphone_14" alt="...">
+          <div class="card-body">
+            <p class="card-text ">Apple watch series 9 cps<br>41 mm strlight Aluminum<br> case</p>
+            <h5 class="card-title mb-3 fw-bold fs-2">$399</h5>
+            <a href="#" class="btn btn-dark px-5">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card col-md position-relative text-center" style="width: 18rem;">
+          <img  class="width_heard" src="./resources/heart.png">
+          <img  src="./resources/Iphone 14 pro 1.png" class="card-img-top w-50 pt-5  ms_iphone_14" alt="...">
+          <div class="card-body">
+            <p class="card-text ">AirPods Max Silver</p>
+            <h5 class="card-title mb-3 fw-bold fs-2">$549</h5>
+            <a href="#" class="btn btn-dark px-5">Go somewhere</a>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+
+   </div>
+ </div>
+
+ <!-- sell offer -->
+ <div class="sell_offer mt-4">
+  <div class="container-fluid overflow-hidden text-center text-md-start" style="background-color:#958AD4 ;">
+    <div class="row d-md-flex align-items-center">
+      <div class="col-md-4">
+         <img style=""  class=" offer_sale" src="./resources/image 19.png" alt="">
+      </div>
+      <div class="col">
+          <div>
+            <h2 class="fw-bold fs-1 text-light"><span style="color: #1A187A;">11.11</span> Sale</h2>
+            <p class=" text-light">Win all attractive products through<br> this offer only from 1st December to 29th January</p>
+          </div>
+      </div>
+      <div class="col-md-4 text-end py-2">
+        <img class="offer_sale_2" style="margin-right: -11px;"  src="./resources/387488908_363230432734412_6908043294096609267_n.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+ </div>
+</main>
+<footer>
+  <div class="footer" style="background-color:rgb(39, 39, 58)">
+    <div class="container py-5">
+      <div class="row text-md-start text-center ">
+          <div class="col-md-5  d-none d-md-flex text-end  gap-2">
+              <div>
+                <img class="w-25" src="./resources/Group 2.png">
+              </div>
+              <div class="icon_container d-flex gap-4">
+                <i class="fa-brands fa-twitter" style="color: #fcfcfc;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #f2f4f8;"></i>
+                <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #f2f2f2;"></i>
+              </div>
+              
+          </div>
+          <div class="col-md-3">
+            <img class="w-50 d-md-none d-block foodr_logo_mar " src="./resources/Group 2.png">
+            <p class="text-light fw-light mt-1">
+              survices<br>Bonus program<br>Git cards<br>credit and payment<br>Service contracts<br>Non-cash account<br>payment
+            </p>
+          </div>
+          <div class="col">
+                <p class="text-light fw-light">Assisance to the buyer <br>Find an order <br>Terms of delivery<br>Exchanges and return of goods<br>Guarantee <br>Frequently asked questions <br>Terms of use of the site</p>
+          </div>
+          <div class="d-md-none d-block ">
+            <i class="fa-brands fa-twitter m-2" style="color: #fcfcfc;"></i>
+            <i class="fa-brands fa-facebook-f m-2" style="color: #f2f4f8;"></i>
+            <i class="fa-brands fa-tiktok m-2" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram m-2" style="color: #f2f2f2;"></i>
+          </div>
+      </div>
+    </div>
+ </div>
+</footer>
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

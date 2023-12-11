@@ -1,0 +1,132 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: white;
+}
+.hea_img{
+    width: 50px;
+    height: 50px;
+}
+.nav-container  > ul{
+    display: flex;
+    list-style: none;
+    gap: 69px;
+}
+.image_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-container > ul > li>a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.nav-container > ul > li:last-child >a{
+    border: 1px solid #f8f5f5;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+header{
+    background: linear-gradient(135deg, #040641 10.47%, #3F0753 98.32%);
+}
+.c-main{
+    margin: auto;
+    width: 85%;
+}
+
+/* start banner section */
+.banner_container{
+    display: flex;
+    align-items: center;
+}
+.ba_left{
+    padding-top:2rem;
+    color: white
+}
+.ba_left >:first-child{
+    font-size: 20px;
+    color: peru;
+    font-weight: 700;
+}
+.ba_left >h1{
+    font-size:4rem ;
+}
+.ba_left >p{
+    width: 60%;
+    line-height: 1.8rem;
+    margin-bottom: 1.9rem;
+}
+.button{
+    background-color:#ef6d58;
+    padding: 0.5rem 1rem;
+}
+.ba_left >:last-child{
+    display: inline-flex;
+    margin-left: 2rem;
+}
+.ba_right{
+    padding-top:2rem;
+}
+.ba-img{
+    width: 30rem;
+
+}
+.l_socal_icon{
+    width: 80%;
+    text-align: center;
+}
+.experticse_container{
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    
+}
+.experticse_container >h1{
+    padding: 2rem;
+}
+.ex_icon{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5.3rem;
+    justify-content: center; /* Horizontally center the grid items */
+    text-align: center;   
+}
+.repiting{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    width: 85%;
+    color: white;
+    line-height: 3rem;
+    padding-top: 5rem;
+    
+}
+.re{
+    background: linear-gradient(135deg, #040641 10.47%, #3F0753 98.32%);
+}
+.img_re{
+    width: 25rem;
+}
+.last-work{
+   padding: 2rem 0;
+   background-color: burlywood;
+   text-align: center;
+}
+.las-img > img {
+    margin: 0.5rem;
+    
+}
+.las-img {
+    padding-top: 2rem;
+}

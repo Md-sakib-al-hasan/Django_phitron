@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        this is home page
+        <p>Aouthr :{{author}} </P>
+        <p>{{List}} </p>
+
+        <!--condition-->
+        {% if age >= 20  %}
+            <h4>you are adult</h4>
+        {% elif age >= 10 and age <= 19 %}
+            <h4>You cnaakfkal</h4>
+        {% else %}
+            <h4>man is mortal</h4>
+        {% endif %}
+        {% for i  in courses  %}
+        <h3>{{i.id}}<h3>
+        {% endfor %}
+    </h1>
+
+    <h1>{{ List | join:" - " }}</h1>
+    <h1>{{ birth | date:"D d M Y" }}</h1>
+</body>
+</html>

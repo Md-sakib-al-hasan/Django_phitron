@@ -1,0 +1,1 @@
+world.style.removeProperty("color");

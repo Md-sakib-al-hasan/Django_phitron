@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.banner_container{
+    height: 100vh;
+    background-image: url("../pexels-irina-iriser-1590549.jpg"),
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4));
+    background-blend-mode:overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
+@media  screen and (max-width:375px) {
+    .banner_container{
+        color: red;
+        background-color: green;
+    }
+}

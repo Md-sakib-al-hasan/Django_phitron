@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row column-gap-4 d-flex justify-content-center">
+    {% for i in data %}
+    <div class="card col-3 text-center">
+        <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>IdMeal:{{i.idMeal}}</h4>
+          <h5 class="card-title">{{i.strMeal}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+{% endblock content %}

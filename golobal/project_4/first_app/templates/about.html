@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+ index_page
+{% endblock title %}
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for i in data  %}
+     <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.username}}</td>
+        <td>{{i.email}}</td>
+      </tr>
+     {% endfor %}
+    </tbody>
+  </table>
+  <h1>{{id}}</h1>
+{% endblock content %}

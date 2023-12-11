@@ -1,0 +1,48 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    position:relative;
+   }
+.title{
+    background: linear-gradient();
+    font-weight:7000 ;
+    font-style: italic;
+   } 
+   .discription{
+    color: blue;
+    line-height: 50px;
+    
+   }
+   .sk{
+    background-color: yellow;
+   }
+   .test{
+    background-color: aqua;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+   }
+   .box{
+      width: 100px;
+      height: 80px;
+   }
+   .box1{
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+
+   }
+   .box2{
+    background-color: red;
+    position: absolute;
+    margin-left: 20px ;
+    margin-top: 20px;
+
+   }
+   .box3{
+    background-color: green;
+    margin: 20px auto;
+   }

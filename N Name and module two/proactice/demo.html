@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Common styles for both desktop and mobile */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Desktop styles using table layout */
+        .desktop-container {
+            display: table;
+            width: 100%;
+            /* Add other desktop-specific styles here */
+        }
+
+        /* Mobile styles using flex layout */
+        @media screen and (max-width: 768px) {
+            .desktop-container {
+                display: flex;
+                flex-direction: column;
+                /* Add other mobile-specific styles here */
+            }
+        }
+
+        /* Common styles for both desktop and mobile */
+        .content {
+            /* Add styles for your content container here */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="desktop-container">
+        <div class="content">
+            <div hight="100px" style="background-color: red;"></div>
+        </div>
+    </div>
+
+</body>
+</html>

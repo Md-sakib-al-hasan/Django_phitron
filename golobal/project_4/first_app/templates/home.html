@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+ index_page
+{% endblock title %}
+{% block content %}
+{{block.super}}
+ <img src="{% static "bird_2.jpg" %}" alt="brid_2.png">
+{% endblock content %}
