@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+ {% if form.non_field_errors %}
+     {% for er in form.non_field_errors %}
+     <button class="btn btn-danger w-100" type="button">{{er}}</button>
+     {% endfor %}
+ {% endif %}
+ {% if messages %}
+    {% for me in messages %}
+        <button class="btn btn-success w-100" type="button">{{me}}</button>
+    {% endfor %}
+ {% endif %}
+ <form  method='post' novalied  class='w-50 m-auto'>
+   {% csrf_token %}
+   {% load crispy_forms_tags %}
+   <!--{{form | crispy }}-->
+   {% for fm in  form %}
+    {{fm.label_tag}}
+    {{fm}}
+    {{fm.errors | striptags}}
+   {% endfor %}
+   <br>
+   <button class="btn btn-primary" type="submit">Submit</button>
+
+ </form>
+{% endblock content %}

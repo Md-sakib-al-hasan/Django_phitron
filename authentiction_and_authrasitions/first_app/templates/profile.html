@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+{% if messages %}
+{% for me in messages %}
+    <button class="btn btn-success w-100" type="button">{{me}}</button>
+{% endfor %}
+{% endif %}
+  <h1>Profile</h1>
+<div>
+    <a href={% url 'old_password'%} class="btn btn-warning text-light" > passworld with old password</a>
+    <a href={% url 'old_password2'%} class="btn btn-warning text-light" > passworld change with out old password</a>
+</div>
+{% endblock content %}
