@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block content %}
@@ -11,3 +12,18 @@
 {% endblock content %}
 
 
+=======
+{% extends "base.html" %}
+
+{% block content %}
+   <form action="" method='post' class="w-50 m-auto">
+    {% csrf_token %}
+    {% load crispy_forms_tags %}
+    {{form | crispy }}
+    <button class="btn btn-primary" type="submit">Submit</button>
+   </form>
+    
+{% endblock content %}
+
+
+>>>>>>> 1536a79ed4bb132d457adca7cd486953d8e04534

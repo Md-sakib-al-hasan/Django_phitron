@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
@@ -49,4 +50,57 @@
   </div>
 
  
+=======
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  <div class="container mt-5" >
+    <div class="row">
+        <div class="col-6 align-self-center mt-3 mb-0 text-center" >
+            <h3>WELCOME TO CAR HAAT</h3>
+            <p class="p-2">
+                ar haat- where your dreams meet affordability. If you are looking for a used, cost-effective as well as enchanting car, Car Haat is here for you.
+                What are the questions that constantly come to your mind while buying a car? - Are the equipment and parts okay? Is the engine condition good? Do you have to face the hassles of the paperwork? If you want to overcome these inconveniences and choose the best product- Car Haat should be your first choice.
+            </p>
+        </div>
+        <div class="col-6">
+             <img class="w-100"  src="{% static "car1.png" %}" alt="bank">
+        </div>
+    </div>
+  </div>
+
+  {% comment %} start for dinamic worke {% endcomment %}
+
+  <div class="brand">
+     <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+             {% for ba in brand %}
+                    <div class="col row-cols-2 btn btn-warning mx-4 mt-4"><a href="{% url 'brand_wise_post' ba.slug%}" class="text-decoration-none">{{ba.Brand_Name}}</a></div>
+             {% endfor %}
+        </div>
+     </div> 
+  </div>
+  <div class="card_contener">
+        <div class="header">
+            <div class="col row-cols-2 btn btn-warning mt-4" style="margin-left:89px">Total car Found: {{data | length }}</div>
+        </div>
+        <div class="body container mt-4 " style="margin-left:89px">
+          <div class="row gap-2 text-center">
+                {% for fd in data %}
+                <div class="card" style="width: 18rem;">
+                    <img src="{{fd.car_img.url}}" class="card-img-top mt-2" alt="car_pic">
+                    <div class="card-body">
+                      <h5 class="card-title">{{fd.Car_Name}}</h5>
+                      <p>Price{{fd.Car_Price}}</p>
+                      <p>Brand_Name:{{fd.Car_Brand_Name}}</p>
+                      <a href="{% url 'details' id=fd.id %}" class="btn btn-primary">Views Details</a>
+                    </div>
+                  </div>
+                {% endfor %}
+          </div> 
+        </div>
+  </div>
+
+ 
+>>>>>>> 1536a79ed4bb132d457adca7cd486953d8e04534
 {% endblock content %}

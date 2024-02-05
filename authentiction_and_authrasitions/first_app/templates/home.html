@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block content %}
@@ -7,4 +8,15 @@
 {% endfor %}
 {% endif %}
  {{type}}
+=======
+{% extends "base.html" %}
+
+{% block content %}
+{% if messages %}
+{% for me in messages %}
+    <button class="btn btn-success w-100" type="button">{{me}}</button>
+{% endfor %}
+{% endif %}
+ {{type}}
+>>>>>>> 1536a79ed4bb132d457adca7cd486953d8e04534
 {% endblock content %}
