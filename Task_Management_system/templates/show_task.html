@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<div class="container text-center">
+    <div class="row column-gap-2 ">
+        {% for ta in data %}
+        
+        <div class="card" style="width: 18rem;">
+            <div class="card-body ">
+              <h5 class="card-title">{{ta.id}}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">{{ta.TaskAssign_Date | date:"d-M-y"}}</h6>
+              <p class="card-text">{{ta.taskDescription}}</p>
+              {% if ta.is_completed is True %}
+                <p>Completed</p>
+                
+              {% else %}
+              <div>
+                <a href="{% url 'edit_tasks' id=ta.id %}" class="btn">Edit</a>
+                <a href="{% url 'delete_tasks' id=ta.id %}" class="btn">Delete</a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        
+        
+        {% endfor %}
+      </div>
+</div>
+
+{% endblock content %}

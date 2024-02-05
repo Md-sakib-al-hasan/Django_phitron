@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+{% if  form.non_field_errors %}
+   {% for me in form.non_field_errors %}
+    <button class="btn btn-danger w-100">{{me}}</button>
+   {% endfor %}
+
+{% endif %}
+
+{% load crispy_forms_tags %}
+<form action="" method='post' class="w-50 m-auto" novalidate>
+    {% csrf_token %}
+   <!--{{form | crispy}}-->
+   {% for fm in form %}
+     {{fm.label_tag}}
+     {{fm}}
+     {{fm.errors | striptags}}
+   {% endfor %}
+   <br>
+ <button type="submit" class="btn  btn-primary">Submit</button>
+</form>
+{% endblock content %}

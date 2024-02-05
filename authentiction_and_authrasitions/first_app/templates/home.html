@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if messages %}
+{% for me in messages %}
+    <button class="btn btn-success w-100" type="button">{{me}}</button>
+{% endfor %}
+{% endif %}
+ {{type}}
+{% endblock content %}

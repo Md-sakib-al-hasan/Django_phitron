@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<form class="w-50 m-auto" action="" method="post">
+    <h1>{{type}} page</h1>
+    {% csrf_token %}
+    {% load crispy_forms_tags %}
+    <form action="" method="post">
+        {{form | crispy}}
+        <button id="liveToastBtn" class="btn btn-warning mb-5">submit</button>
+    </form>
+
+   
+</form>
+    
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if messages %}
+{% for m in messages %}
+    <small {% if m.tags %} class="{{m.tags}}"{% endif %} >{{m}}</small>
+{% endfor %}
+{% endif %}
+ <h1>welcome to priile</h1>
+ {{user}}
+ <p><a href="{% url 'pass_change' %}">change your password</a></p>
+ <p><a href="{% url 'pass_change2' %}">change your password without ol password</a></p>
+ {% load crispy_forms_tags %}
+ <form method="post" style="width:50%; margin:auto " novalidate>
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+        {% for er in form.non_field_errors  %}
+         <p class="bg-danger text-white p-2">{{er}}</p>
+        {% endfor %}
+
+    {% endif %}
+    <!--{{form | crispy}} -->
+    {% for fm in  form %}
+    {{fm.label_tag }}
+    {{fm  }}
+    {{fm.errors|striptags }}
+    {% endfor %}
+    <br>
+    <button type='submit' class="btn btn-warning">Login</button>
+</form>
+{% endblock  %}
+

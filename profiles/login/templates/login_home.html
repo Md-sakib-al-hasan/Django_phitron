@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  
+<h1>Name :{{name | default:"Not found use name" }}</h1>
+<h1>Email :{{email | default:"Not found email" }}</h1>
+<img src={{pic}} alt="balnk">
+{% endblock content %}
+  
+

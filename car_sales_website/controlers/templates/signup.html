@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+ {% load crispy_forms_tags %}
+ <form action="" method="post" novalidate class="w-50 m-auto">
+    {% csrf_token %}
+    
+    <!--{{ form | crispy }}-->
+    {% for fm in form %}
+        {{fm.label_tag}}
+        {{fm}}
+        {{fm.errors | striptags }}
+       
+    {% endfor %}
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+{% endblock content %}

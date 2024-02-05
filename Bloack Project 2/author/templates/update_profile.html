@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="w-50 m-auto" action="" method="post">
+    <h1>Update  your profile</h1>
+    {% csrf_token %}
+    {% load crispy_forms_tags %}
+    <form action="" method="post">
+        {{form | crispy}}
+        <button id="liveToastBtn" class="btn btn-warning mb-5">submit</button>
+        <button   class="btn btn-primary mb-5"><a class="text-light text-decoration-none" href="{% url 'passCh' %}">change passworld</a></button>
+    </form>
+
+    
+</form>
+    
+{% endblock content %}

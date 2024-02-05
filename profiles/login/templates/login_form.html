@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <form method='post' action='/login/'>
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name</label>
+          <input name="name" type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <h1>Name :{{name | default:"Not found use name" }}</h1>
+      <h1>Email :{{email | default:"Not found email" }}</h1>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="row">
+    <h1>{{data | length}}</h1>
+    <div class="col-2 bg-light">
+      <p>all Category</p>
+     {% for ch in category %}
+     <div class="form-check">
+      <input class="form-check-input" type="radio" name="category" id="{{ch.id}}" {% if ch.id == 1%} checked {% endif %} >
+      <label class="form-check-label" for="{{ch.id}}">
+         <a href="{% url 'category_wise_post' ch.slug %}" class="btn">{{ch.name}}</a>
+      </label>
+    </div>
+     {% endfor %}
+      
+    </div>
+    <div class="col-10">
+      <div class="row m-0 p-0">
+    
+
+
+        {% for post in data%}
+         
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.content}}</p>
+              <a href="#" class="btn btn-primary">Author {{post.author.first_name}}</a>
+              <p>
+                  {% for i in post.category.all  %}
+                  {{i}}
+                  {% endfor %}
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+{% endfor %}
+</div>
+</div>
+</div>
+
+
+</div>
+{% endblock content %}
